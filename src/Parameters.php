@@ -2,27 +2,30 @@
 
 class Parameters {
 
-	protected static $p = null;
+	protected static $parameters = null;
 
-	public static function get($p) {
-		if (is_null(self::$p)) {
-			$a = array_merge($_SESSION, $_GET, $_POST);
-			self::$p = $a;
-			return (strpos($p, ".") === false)
-				? ((isset($a[$p])) ? $a[$p] : null)
-				: ((substr($p, 0, 3) == 'get')
-					? $_GET[substr($p,4)]
-					: ((substr($p, 0, 4) == 'post')
-						? $_POST[substr($p,5)]
-						: $_SESSION[substr($p,8)]));
+	public static function get($parameter) {
+
+		if (is_null(self::$parameters)) {
+
+			$enviroment_variables = array_merge($_SESSION, $_GET, $_POST);
+			self::$parameters = $enviroment_variables;
+
+				return (strpos($parameter, ".") === false) ? ((isset($enviroment_variables[$parameter])) ? $enviroment_variables[$parameter] : null)
+				: ((substr($parameter, 0, 3) == 'get')
+					? $_GET[substr($parameter,4)]
+					: ((substr($parameter, 0, 4) == 'post')
+						? $_POST[substr($parameter,5)]
+						: $_SESSION[substr($parameter,8)]));
 		}
-		return (strpos($p, ".") === false)
-			? self::$p[$p]
-			: ((substr($p, 0, 3) == 'get')
-				? $_GET[substr($p,4)]
-				: ((substr($p, 0, 4) == 'post')
-					? $_POST[substr($p,5)]
-					: $_SESSION[substr($p,8)]));
+
+		return (strpos($parameter, ".") === false)
+			? self::$parameters[$parameter]
+			: ((substr($parameter, 0, 3) == 'get')
+				? $_GET[substr($parameter,4)]
+				: ((substr($parameter, 0, 4) == 'post')
+					? $_POST[substr($parameter,5)]
+					: $_SESSION[substr($parameter,8)]));
 	}
 
 }
