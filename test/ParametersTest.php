@@ -59,16 +59,16 @@ class ParametersTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals('another',TestableParameters::get("session.a-session-var"));
     }
 
-    public function test_unknownVarsTwoAsserts(
+    public function test_TwoOrMoreCallToGetPassIf(
     ) {
         TestableParameters::get('demo');
         TestableParameters::get('get.a-get-var');
         TestableParameters::get('session.a-session-var');
         $this->assertEquals('and another value',TestableParameters::get("a-post-var"));
     }
+
     public function test_modifyGet()
     {
-        $this->markTestIncomplete();
         TestableParameters::get('get.a-get-var');
         $_GET['a-get-var'] = 'efecto demo';
         $this->assertEquals('efecto demo',TestableParameters::get('a-get-var'));
