@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="AllTests" tests="1" assertions="1" failures="0" errors="0" time="0.003785">
+    <testsuite name="ParametersTest" file="/home/imc/projects/PHP/exorcismo_codigo_PHP/exercises/1-structure/test/ParametersTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.003785">
+      <testcase name="test_unknownVarsAreNull" class="ParametersTest" file="/home/imc/projects/PHP/exorcismo_codigo_PHP/exercises/1-structure/test/ParametersTest.php" line="32" assertions="1" time="0.003785"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
