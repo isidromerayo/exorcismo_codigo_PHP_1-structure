@@ -16,7 +16,7 @@ class ParametersTest extends PHPUnit_Framework_TestCase {
 	) {
 		$_GET = array(
 			"a-get-var" => "a value",
-			"another-get-var" => "another value"
+			"another-get-var" => "another value",
 		);
 		$_POST = array(
 			"a-post-var" => "and another value",
@@ -65,5 +65,12 @@ class ParametersTest extends PHPUnit_Framework_TestCase {
         TestableParameters::get('get.a-get-var');
         TestableParameters::get('session.a-session-var');
         $this->assertEquals('and another value',TestableParameters::get("a-post-var"));
+    }
+    public function test_modifyGet()
+    {
+        $this->markTestIncomplete();
+        TestableParameters::get('get.a-get-var');
+        $_GET['a-get-var'] = 'efecto demo';
+        $this->assertEquals('efecto demo',TestableParameters::get('a-get-var'));
     }
 }

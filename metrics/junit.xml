@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="AllTests" tests="7" assertions="7" failures="0" errors="0" time="0.043918">
-    <testsuite name="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" tests="7" assertions="7" failures="0" errors="0" time="0.043918">
-      <testcase name="test_unknownVarsAreNull" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="32" assertions="1" time="0.009092"/>
-      <testcase name="test_knownVarsGetArentNull" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="37" assertions="1" time="0.018610"/>
-      <testcase name="test_knownVarsGetFromPostArentNull" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="42" assertions="1" time="0.004685"/>
-      <testcase name="test_unknownVarsBeginGetWithPoint" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="47" assertions="1" time="0.002799"/>
-      <testcase name="test_unknownVarsBeginPostWithPoint" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="52" assertions="1" time="0.002825"/>
-      <testcase name="test_knownVarsBeginSessionWithPoint" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="57" assertions="1" time="0.002888"/>
-      <testcase name="test_unknownVarsTwoAsserts" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="62" assertions="1" time="0.003019"/>
-    </testsuite>
+  <testsuite name="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" tests="7" assertions="7" failures="0" errors="0" time="0.080026">
+    <testcase name="test_unknownVarsAreNull" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="32" assertions="1" time="0.006495"/>
+    <testcase name="test_knownVarsGetArentNull" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="37" assertions="1" time="0.038521"/>
+    <testcase name="test_knownVarsGetFromPostArentNull" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="42" assertions="1" time="0.006990"/>
+    <testcase name="test_unknownVarsBeginGetWithPoint" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="47" assertions="1" time="0.006933"/>
+    <testcase name="test_unknownVarsBeginPostWithPoint" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="52" assertions="1" time="0.006957"/>
+    <testcase name="test_knownVarsBeginSessionWithPoint" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="57" assertions="1" time="0.006947"/>
+    <testcase name="test_unknownVarsTwoAsserts" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="62" assertions="1" time="0.007183"/>
   </testsuite>
 </testsuites>
