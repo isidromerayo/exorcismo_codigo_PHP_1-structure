@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="test" tests="8" assertions="8" failures="1" errors="0" time="0.073091">
-    <testsuite name="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" tests="8" assertions="8" failures="1" errors="0" time="0.073091">
-      <testcase name="test_unknownVarsAreNull" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="32" assertions="1" time="0.023540"/>
-      <testcase name="test_knownVarsGetArentNull" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="37" assertions="1" time="0.021753"/>
-      <testcase name="test_knownVarsGetFromPostArentNull" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="42" assertions="1" time="0.003342"/>
-      <testcase name="test_unknownVarsBeginGetWithPoint" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="47" assertions="1" time="0.003355"/>
-      <testcase name="test_unknownVarsBeginPostWithPoint" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="52" assertions="1" time="0.003310"/>
-      <testcase name="test_knownVarsBeginSessionWithPoint" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="57" assertions="1" time="0.003355"/>
-      <testcase name="test_TwoOrMoreCallToGetPassIf" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="62" assertions="1" time="0.003501"/>
-      <testcase name="test_modifyGet" class="ParametersTest" file="/home/imc/projects/PHP/1-structure/test/ParametersTest.php" line="70" assertions="1" time="0.010935">
+  <testsuite name="AllTests" tests="8" assertions="8" failures="1" errors="0" time="0.094595">
+    <testsuite name="ParametersTest" file="/home/imc/projects/PHP/exorcismo_codigo_PHP_1-structure/test/ParametersTest.php" tests="8" assertions="8" failures="1" errors="0" time="0.094595">
+      <testcase name="test_unknownVarsAreNull" class="ParametersTest" file="/home/imc/projects/PHP/exorcismo_codigo_PHP_1-structure/test/ParametersTest.php" line="32" assertions="1" time="0.016418"/>
+      <testcase name="test_knownVarsGetArentNull" class="ParametersTest" file="/home/imc/projects/PHP/exorcismo_codigo_PHP_1-structure/test/ParametersTest.php" line="37" assertions="1" time="0.046959"/>
+      <testcase name="test_knownVarsGetFromPostArentNull" class="ParametersTest" file="/home/imc/projects/PHP/exorcismo_codigo_PHP_1-structure/test/ParametersTest.php" line="42" assertions="1" time="0.002909"/>
+      <testcase name="test_unknownVarsBeginGetWithPoint" class="ParametersTest" file="/home/imc/projects/PHP/exorcismo_codigo_PHP_1-structure/test/ParametersTest.php" line="47" assertions="1" time="0.006175"/>
+      <testcase name="test_unknownVarsBeginPostWithPoint" class="ParametersTest" file="/home/imc/projects/PHP/exorcismo_codigo_PHP_1-structure/test/ParametersTest.php" line="52" assertions="1" time="0.002770"/>
+      <testcase name="test_knownVarsBeginSessionWithPoint" class="ParametersTest" file="/home/imc/projects/PHP/exorcismo_codigo_PHP_1-structure/test/ParametersTest.php" line="57" assertions="1" time="0.002824"/>
+      <testcase name="test_TwoOrMoreCallToGetPassIf" class="ParametersTest" file="/home/imc/projects/PHP/exorcismo_codigo_PHP_1-structure/test/ParametersTest.php" line="62" assertions="1" time="0.002995"/>
+      <testcase name="test_modifyGet" class="ParametersTest" file="/home/imc/projects/PHP/exorcismo_codigo_PHP_1-structure/test/ParametersTest.php" line="70" assertions="1" time="0.013545">
         <failure type="PHPUnit_Framework_ExpectationFailedException">ParametersTest::test_modifyGet
 Failed asserting that two strings are equal.
 --- Expected
@@ -18,8 +18,7 @@ Failed asserting that two strings are equal.
 -'efecto demo'
 +'a value'
 
-/home/imc/projects/PHP/1-structure/test/ParametersTest.php:74
-/usr/bin/phpunit:46
+/home/imc/projects/PHP/exorcismo_codigo_PHP_1-structure/test/ParametersTest.php:74
 </failure>
       </testcase>
     </testsuite>
